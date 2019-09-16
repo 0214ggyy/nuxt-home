@@ -1,21 +1,23 @@
 <template>
-  <div class="container">
-    <div>
-      <Head />
-    </div>
+  <div class="index-warp">
+    <Head />
   </div>
 </template>
 
 <script>
-import Head from '~/components/Head.vue'
-
+import Head from '../components/Head'
 export default {
-  components: {
-    Head
+ components: { Head },
+  data() {
+    return {
+     
+    }
   }
 }
 </script>
 
-<style>
-
+<style lang='scss' scope>
+.index-warp{
+  
+}
 </style>

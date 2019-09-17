@@ -10,13 +10,35 @@
         .head-logo{
             width: 50px;
             height: 50px;
-            border-radius: 50%;
-            border: 1px solid #eee;
+            overflow: hidden;
+            position: relative;
             a{
                 img{
+                   position: absolute;
                    width: 100%;
+                   border: 1px solid #fafb06;
+                   border-radius: 50%;
+                //    object-fit: none;
+                }
+                .head-bglogo{
+                    z-index: 9;
+                    backface-visibility: hidden;
                 }
             }
         }
+        .head-url{
+          padding-top: 26px;
+        }
+    }
+    .Rotation{
+        -webkit-transform: rotateY(360deg);
+        animation: rotation 5s linear infinite;
+        -moz-animation: rotation 5s linear infinite;
+        -webkit-animation: rotation 5s linear infinite;
+        -o-animation: rotation 5s linear infinite;
+    }
+    @-webkit-keyframes rotation{
+        from {-webkit-transform: rotateY(0deg);}
+        to {-webkit-transform: rotateY(360deg);}
     }
 }

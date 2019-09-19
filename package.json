@@ -5,9 +5,9 @@
   "author": "guoshujie",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --hostname home.guo.com --port 98",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "nuxt start --port 98",
     "generate": "nuxt generate"
   },
   "dependencies": {

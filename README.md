@@ -1,6 +1,6 @@
-# my-nuct
+# home-nuxt-guo
 
-> My splendiferous Nuxt.js project
+> My bedazzling Nuxt.js project
 
 ## Build Setup
 

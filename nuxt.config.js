@@ -1,3 +1,4 @@
+import { Script } from "vm";
 
 export default {
   mode: 'universal',
@@ -13,6 +14,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {type: 'text/javascript', src: "https://webapi.amap.com/maps?v=1.4.15&key='29c81b72606556ba85f9212439693491'"}
     ]
   },
   /*

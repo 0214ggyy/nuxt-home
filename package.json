@@ -5,7 +5,7 @@
   "author": "guoshujie",
   "private": true,
   "scripts": {
-    "dev": "nuxt --hostname home.runquan.com --port 99",
+    "dev": "nuxt --hostname home.runquan.club --port 99",
     "build": "nuxt build",
     "start": "nuxt start --port 99`",
     "generate": "nuxt generate"

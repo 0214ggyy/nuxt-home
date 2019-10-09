@@ -1,19 +1,5 @@
 <template>
   <div class="index-warp">
-    <!-- <div class="index-head w">
-      <ul class="index-head-ul flex-btw">
-        <li>
-          <a href="javascript:;">
-            <img src="../assets/img/logo.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="javascript:;">BLOG</a>
-          <a href="javascript:;">GITHUB</a>
-          <a href="javascript:;">HELP</a>
-        </li>
-      </ul>
-    </div> -->
     <Head></Head>
     <div class="index-brnner">
         <el-carousel :interval="5000" arrow="never" height="600px" indicator-position = "none">
@@ -35,6 +21,13 @@
         </el-carousel>
     </div>
     <div class="index-content">
+      <div class="index-text">
+        <ul>
+          <li v-for="(item,index) in imgList" :key="index"><img :src="item.urlimg" alt="">
+          <span>法师</span>
+          </li>
+        </ul>
+      </div>
       <div class="index-map">
         <Map></Map>
       </div>
@@ -50,7 +43,70 @@ import Map from '../components/Map'
 export default {
  components: {Head, Map, Foot},
  data () {
-   return{}
+   return{
+     imgList:[
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'},
+       {urlimg: 'http://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg'}
+     ]
+   }
  },
  mounted () {},
  watch: {},

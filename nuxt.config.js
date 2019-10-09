@@ -1,19 +1,17 @@
-import { Script } from "vm";
-
 export default {
   mode: 'universal',
   /*
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: '润泉',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/fa.ico' }
     ],
     script: [
       {type: 'text/javascript', src: "https://webapi.amap.com/maps?v=1.4.15&key='29c81b72606556ba85f9212439693491'"}
